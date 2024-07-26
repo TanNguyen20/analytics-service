@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: analytics-service
+  config:
+    import: "configserver:https://config-service-xvr8.onrender.com"
+
