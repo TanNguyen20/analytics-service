@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import vn.tannguyen.analytics_service.client.DataClient;
 
 @RestController
-@RequestMapping("/public-data")
+@RequestMapping("")
 public class PublicController {
     DataClient dataClient;
 
@@ -16,7 +16,7 @@ public class PublicController {
 
     @GetMapping("/welcome")
     public String welcome() {
-        return dataClient.welcome();
+        return "Analytics welcome";
     }
 
 }
